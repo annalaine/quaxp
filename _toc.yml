@@ -1,44 +1,5 @@
-- file: quaxp
+- file: index
 
-- header: Introduction
-- file: 0-introduction
-- file: introduction/0-1-machine-learning
-  title: What is machine learning?
-- file: introduction/0-2-supervised-learning
-- file: introduction/0-3-graphs
-- file: introduction/0-4-data
-- file: introduction/0-5-python
+- file: introduction/0-introduction
   sections:
-  - file: introduction/python/0-5-1-syntax-arithmetic
-  - file: introduction/python/0-5-2-strings
-  - file: introduction/python/0-5-3-lists
-  - file: introduction/python/0-5-4-control-flow
-  - file: introduction/python/0-5-5-functions
-  - file: introduction/python/0-5-6-pandas
-  - file: introduction/python/0-5-7-plot
-  
-- header: Part 1 - Numerical data
-- file: chapter1-numerical/1-1-AIS-data
-  sections:
-  - file: chapter1-numerical/1-1-1-understand
-  - file: chapter1-numerical/1-1-1-examine
-- file: chapter1-numerical/1-2-missing
-  sections:
-  - file: chapter1-numerical/1-2-1-width
-  - file: chapter1-numerical/1-2-2-meansog
-  - file: chapter1-numerical/1-2-3-whattodo
-- file: chapter1-numerical/1-3-biased
-  sections:
-  - file: chapter1-numerical/1-3-1-types
-  - file: chapter1-numerical/1-3-2-att-selection
-  - file: chapter1-numerical/1-3-3-split
-- file: chapter1-numerical/1-4-conclusion
-  sections:
-  - file: chapter1-numerical/1-4-1-practical-task
-  - file: chapter1-numerical/1-final
-  
-- header: Appendix
-- file: A-appendix
-  sections:
-  - file: appendix/A-1-1-AIS-modifications
-  - file: appendix/A-1-2-algorithms
+    - file: introduction/0-1-machine-learning

@@ -6,3 +6,6 @@ logo: logo.png
 latex:
   latex_documents:
     targetname: book.tex
+
+html:
+  navbar_number_sections: false
