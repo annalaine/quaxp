@@ -1,9 +1,7 @@
 - file: index
 
-- file: introduction/0-introduction
+- file: content/introduction/0-introduction
+  expand_sections: true
   sections:
-    - file: introduction/0-1-machine-learning
-    - file: introduction/0-2-supervised-learning
-    - file: introduction/0-3-graphs
-    - file: introduction/0-4-data
-    - file: introduction/0-5-pytho
+    - file: content/introduction/0-1-machine-learning
+    - file: content/introduction/0-2-supervised-learning
