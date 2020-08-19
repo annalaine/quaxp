@@ -42,3 +42,9 @@
       expand_sections: false
       sections:
       - file: 1-4-1-practical-task
+
+- file: A-appendix
+  expand_sections: true
+  sections:
+    - file: A-1-1-AIS-modifications
+    - file: A-1-2-algorithms
