@@ -1,66 +1,44 @@
-file: 1-numerical
-sections:
+- file: index
+
 - file: 0-introduction
-- file: LICENSE
-- file: A-appendix
-- file: conclusion/conclusion
+  expand_sections: true
   sections:
-  - file: conclusion/finalquiz
-  - file: conclusion/generalreview
-- file: part_3/conclusion3
+    - file: 0-1-machine-learning
+    - file: 0-2-supervised-learning
+    - file: 0-3-graphs
+    - file: 0-4-data
+    - file: 0-5-python
+      expand_sections: false
+      sections:
+      - file: 0-5-1-syntax-arithmetic
+      - file: 0-5-2-strings
+      - file: 0-5-3-lists
+      - file: 0-5-4-control-flow
+      - file: 0-5-5-functions
+      - file: 0-5-6-pandas
+      - file: 0-5-7-plot
+
+- file: 1-numerical
+  expand_sections: true
   sections:
-  - file: part_3/presentationdataset3
-  - file: part_3/practicalexercise3
-  - file: part_3/quiz3
-  - file: part_3/eyeopener3
-  - file: part_3/errorsdetetion3
-  - file: part_3/textdata
-  - file: part_3/lecture3
-  - file: part_3/mitigationtechniques3
-- file: features/features
-  sections:
-  - file: features/markdown
-  - file: features/notebooks
-- file: appendix/A-1-1-AIS-modifications
-  sections:
-  - file: appendix/A-1-2-algorithms
-- file: introduction/0-5-python
-  sections:
-  - file: introduction/0-2-supervised-learning
-  - file: introduction/0-1-machine-learning
-  - file: introduction/0-4-data
-  - file: introduction/0-3-graphs
-  - file: introduction/python/0-5-5-functions
-    sections:
-    - file: introduction/python/0-5-1-syntax-arithmetic
-    - file: introduction/python/0-5-3-lists
-    - file: introduction/python/0-5-2-strings
-    - file: introduction/python/0-5-4-control-flow
-    - file: introduction/python/0-5-7-plot
-    - file: introduction/python/0-5-6-pandas
-- file: chapter1-numerical/1-2-2-meansog
-  sections:
-  - file: chapter1-numerical/1-3-2-att-selection
-  - file: chapter1-numerical/1-final
-  - file: chapter1-numerical/1-1-2-examine
-  - file: chapter1-numerical/1-2-1-width
-  - file: chapter1-numerical/1-2-missing
-  - file: chapter1-numerical/1-4-1-practical-task
-  - file: chapter1-numerical/1-3-1-types
-  - file: chapter1-numerical/1-3-biased
-  - file: chapter1-numerical/1-1-AIS-data
-  - file: chapter1-numerical/1-3-3-split
-  - file: chapter1-numerical/1-4-conclusion
-  - file: chapter1-numerical/1-1-1-understand
-  - file: chapter1-numerical/1-2-3-whattodo
-  - file: chapter1-numerical/1-functions
-- file: part_2/presentationdataset2
-  sections:
-  - file: part_2/practicalexercise2
-  - file: part_2/quiz2
-  - file: part_2/errorsdetetion2
-  - file: part_2/eyeopener2
-  - file: part_2/imagedata
-  - file: part_2/lecture2
-  - file: part_2/conclusion2
-  - file: part_2/mitigationtechniques2
+    - file: 1-1-AIS-data
+      expand_sections: false
+      sections:
+      - file: 1-1-1-understand
+      - file: 1-1-2-examine
+    - file: 1-2-missing
+      expand_sections: false
+      sections:
+      - file: 1-2-1-width
+      - file: 1-2-2-meansog
+      - file: 1-2-3-whattodo
+    - file: 1-3-biased
+      expand_sections: false
+      sections:
+      - file: 1-3-1-types
+      - file: 1-3-2-att-selection
+      - file: 1-3-3-split
+    - file: 1-4-conclusion
+      expand_sections: false
+      sections:
+      - file: 1-4-1-practical-task

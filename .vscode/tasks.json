@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build the book!",
+            "type": "shell",
+            "command": "cd /home/aduerkop/Codeprojekte/HOOU_2020/QuaXP && rm -r quaxp-book/_build && /home/aduerkop/.local/bin/jupyter-book build quaxp-book",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
