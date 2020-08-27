@@ -15,7 +15,7 @@ before_script:
 build_book:
     stage: setup
     script:
-        - pip install jupyter-book matplotlib numpy pandas sklearn
+        - pip install -r requirements.txt
         - jupyter-book build ./
     artifacts:
         paths:
@@ -29,7 +29,7 @@ review:start:
         - eval $(ssh-agent -s)
         - echo "$REVIEW_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
         - ssh -p "${REVIEW_SSH_PORT}" "${REVIEW_SSH_USER}"@"${REVIEW_HOST_NAME}" "mkdir -p /usr/share/nginx/html/~${CI_COMMIT_REF_NAME}"
-        - scp -P "${REVIEW_SSH_PORT}" -r public/* "${REVIEW_SSH_USER}"@"${REVIEW_HOST_NAME}":"/usr/share/nginx/html/~${CI_COMMIT_REF_NAME}"
+        - scp -P "${REVIEW_SSH_PORT}" -r _build/html/* "${REVIEW_SSH_USER}"@"${REVIEW_HOST_NAME}":"/usr/share/nginx/html/~${CI_COMMIT_REF_NAME}"
     except:
         - master
     environment:
@@ -64,7 +64,7 @@ deploy:
         - eval $(ssh-agent -s)
         - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
         - ssh -p "${SSH_PORT}" "${SSH_USER}"@"${HOST_NAME}" "mkdir -p /usr/share/nginx/html"
-        - scp -P "${SSH_PORT}" -r public/* "${SSH_USER}"@"${HOST_NAME}":"/usr/share/nginx/html"
+        - scp -P "${SSH_PORT}" -r _build/html/* "${SSH_USER}"@"${HOST_NAME}":"/usr/share/nginx/html"
     environment:
         name: $CI_COMMIT_REF_NAME
         url: https://$PROXY_HOST_NAME$BASE_DIR
