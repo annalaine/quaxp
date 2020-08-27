@@ -1,4 +1,5 @@
 image: python
 
-script:
+build:
+    script:
     - pip install -U jupyter-book
