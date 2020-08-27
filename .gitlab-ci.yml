@@ -15,7 +15,7 @@ before_script:
 build_book:
     stage: setup
     script:
-        - pip install jupyter-book
+        - pip install jupyter-book pandas
         - jupyter-book build ./
     artifacts:
         paths:
