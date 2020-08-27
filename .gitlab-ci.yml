@@ -15,7 +15,7 @@ before_script:
 build_book:
     stage: setup
     script:
-        - pip install jupyter-book matplotlib numpy pandas
+        - pip install jupyter-book matplotlib numpy pandas sklearn
         - jupyter-book build ./
     artifacts:
         paths:
