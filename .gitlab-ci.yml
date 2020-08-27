@@ -1,5 +1,101 @@
 image: python
 
-build:
+before_script:
+    # https://docs.gitlab.com/ee/ci/ssh_keys/README.html
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+
+build_book:
+    stage: setup
     script:
-    - pip install -U jupyter-book
+        - pip install jupyter-book
+        - jupyter-book build ./
+    artifacts:
+        paths:
+            - _build
+
+review:start:
+    stage: review
+    script:
+        - echo "$REVIEW_SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+        - eval $(ssh-agent -s)
+        - echo "$REVIEW_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        - ssh -p "${REVIEW_SSH_PORT}" "${REVIEW_SSH_USER}"@"${REVIEW_HOST_NAME}" "mkdir -p /usr/share/nginx/html/~${CI_COMMIT_REF_NAME}"
+        - scp -P "${REVIEW_SSH_PORT}" -r public/* "${REVIEW_SSH_USER}"@"${REVIEW_HOST_NAME}":"/usr/share/nginx/html/~${CI_COMMIT_REF_NAME}"
+    except:
+        - master
+    environment:
+        name: $CI_COMMIT_REF_NAME
+        url: https://${REVIEW_PROXY_HOST_NAME}${REVIEW_BASE_DIR}~${CI_COMMIT_REF_NAME}/
+        on_stop: review:stop
+
+review:stop:
+    stage: review
+    script:
+        - echo "$REVIEW_SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+        - eval $(ssh-agent -s)
+        - echo "$REVIEW_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        - ssh -p "${REVIEW_SSH_PORT}" "${REVIEW_SSH_USER}"@"${REVIEW_HOST_NAME}" "rm -rf /usr/share/nginx/html/~${CI_COMMIT_REF_NAME}"
+    when: manual
+    except:
+        - master
+    environment:
+        name: $CI_COMMIT_REF_NAME
+        action: stop        
+
+deploy:
+    stage: deploy
+    only:
+        - master
+    except:
+        - schedules
+    script:
+        - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+        - eval $(ssh-agent -s)
+        - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        - ssh -p "${SSH_PORT}" "${SSH_USER}"@"${HOST_NAME}" "mkdir -p /usr/share/nginx/html"
+        - scp -P "${SSH_PORT}" -r public/* "${SSH_USER}"@"${HOST_NAME}":"/usr/share/nginx/html"
+    environment:
+        name: $CI_COMMIT_REF_NAME
+        url: https://$PROXY_HOST_NAME$BASE_DIR
+        #url: https://$PROXY_HOST_NAME
+        
+clean:
+    stage: clean
+    script:
+        - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+        - eval $(ssh-agent -s)
+        - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        - ssh -p "${SSH_PORT}" "${SSH_USER}"@"${HOST_NAME}" "rm -rf /usr/share/nginx/html/*"
+    when: manual
+    only:
+        - master
+    environment:
+        name: $CI_COMMIT_REF_NAME
+        action: stop
+        
+.linkchecker:intern:
+  stage: linkchecker
+  except:
+    - master
+  image:
+    name: linkchecker/linkchecker
+    entrypoint: [""]
+  script:
+    - linkchecker --recursion-level 10 --threads 10 --no-status --no-robots --no-warnings --ignore-url 'https://fonts.gstatic.com/{0,1}$' https://${REVIEW_PROXY_HOST_NAME}/${REVIEW_BASE_DIR}/~${CI_COMMIT_REF_NAME}/
+  when: manual
+    
+.linkchecker:all:
+  stage: linkchecker
+  except:
+    - master
+  image:
+    name: linkchecker/linkchecker
+    entrypoint: [""]
+  script:
+    - linkchecker --recursion-level 10 --threads 10 --no-status --no-robots --no-warnings --check-extern --ignore-url 'https://fonts.gstatic.com/{0,1}$' https://${REVIEW_PROXY_HOST_NAME}/${REVIEW_BASE_DIR}/~${CI_COMMIT_REF_NAME}/
+  when: manual
