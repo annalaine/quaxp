@@ -8,7 +8,6 @@
     - file: 0-3-graphs
     - file: 0-4-data
     - file: 0-5-python
-      expand_sections: false
       sections:
       - file: 0-5-1-syntax-arithmetic
       - file: 0-5-2-strings
@@ -22,32 +21,26 @@
   expand_sections: true
   sections:
     - file: 1-1-AIS-data
-      expand_sections: false
       sections:
       - file: 1-1-1-understand
       - file: 1-1-2-examine
     - file: 1-2-missing
-      expand_sections: false
       sections:
       - file: 1-2-1-width
       - file: 1-2-2-meansog
       - file: 1-2-3-whattodo
     - file: 1-3-biased
-      expand_sections: false
       sections:
       - file: 1-3-1-types
       - file: 1-3-2-att-selection
       - file: 1-3-3-split
     - file: 1-4-conclusion
-      expand_sections: false
       sections:
       - file: 1-4-1-practical-task
       
 - file: 2-image
-  expand_sections: true
   sections:
     - file: 2-1-introduction-image
-      expand_sections: false
       sections:
       - file: 2-1-1-image-representation
       - file: 2-1-2-hog
