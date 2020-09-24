@@ -42,6 +42,16 @@
       expand_sections: false
       sections:
       - file: 1-4-1-practical-task
+      
+- file: 2-image
+  expand_sections: true
+  sections:
+    - file: 2-1-introduction-image
+      expand_sections: false
+      sections:
+      - file: 2-1-1-image-representation
+      - file: 2-1-2-hog
+      - file: 2-1-3-image-classification
 
 - file: A-appendix
   expand_sections: true
