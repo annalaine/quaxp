@@ -4,6 +4,21 @@ Welcome to the project QuaXP - Data Quality Explored.
 You find yourself on the tutorial page. Here you can learn everything about the course and how to use the book.  
 Good luck!
 
+---
+
+__Testing of the book__
+
+If you are a tester for the advanced level, please do the following:
+
+- Follow the book order.
+- When you encounter a page with code cells, click on the rocket icon on the top-right corner of the page and select Binder. This will redirect you to another page: the page of the book will be open with Jupyter Notebook in your browser. You might see some hidden content in this version, do not pay attention to those cells (the hidden cells are marked as "cell to hide").
+- Follow the page as you would normally do with any course, and note the time you need to finish each page.
+- When you finish your testing, fill the feedback form and give your times for each page to the person who gave you access to the test version.
+
+We would like to thank very much all the testers who will put in time. Testing is very important for the course and for us to give the best possible pedagogical offer. Do not hesitate to be critic.
+
+---
+
 __Tutorial: how to use the book?__
 
 The course is supposed to be worked with in autonomy: there is no way of keeping track of someone's progress and results. If you wish to keep your scores, you should write them somewhere locally.
@@ -28,7 +43,7 @@ This section is meant for both beginner and advanced levels, the introduction to
 
 On {doc}`this page<0-2-supervised-learning>`, we dig a little bit more in the details of the specific type of machine learning we use here. You learn how to measure the performance of a machine learning experiment, and how the data is specified depending on its type.
 
-#### }Main types of graphs used in this course 
+#### Main types of graphs used in this course 
 
 We present {doc}`here<0-3-graphs>` different ways we will use in the course to visualize the data or the results of our experiments. It follows the previous pages as you need to understand what the data and the results mean before being able to apprehend them on a graph.  
 Specifically, we present histograms, boxplots, and classic 2-d plots of one variable against another.
