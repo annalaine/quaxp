@@ -4,3 +4,4 @@ numpy
 pandas
 sklearn
 ipywidgets
+jupyter_contrib_nbextensions
