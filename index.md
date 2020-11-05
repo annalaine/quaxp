@@ -10,10 +10,17 @@ __Testing of the book__
 
 If you are a tester for the advanced level, please do the following:
 
-- Follow the book order.
-- When you encounter a page with code cells, click on the rocket icon on the top-right corner of the page and select Binder. This will redirect you to another page: the page of the book will be open with Jupyter Notebook in your browser. You might see some hidden content in this version, do not pay attention to those cells (the hidden cells are marked as "cell to hide").
-- Follow the page as you would normally do with any course, and note the time you need to finish each page.
-- When you finish your testing, fill the feedback form and give your times for each page to the person who gave you access to the test version.
+- Start reading this page to decide whether or not you need to follow the pages in the introduction or start directly with the chapter 1.
+- The advanced content is originally hidden on each page, and you need to click on the button "Click to show" that appears on the right.
+- When you encounter a page with code cells, you have two options:
+    - Click on the rocket icon on the top-right corner of the page and select "Live Code". This allows you to run and modify the code cells directly on the page. It may take some time to get ready, so I suggest you start it as soon as you are on the page. 
+    - If this takes too long, there is another way to use the advanced level: on the rocket icon, select instead "Binder". This will redirect you to another page: the page of the book will be open with Jupyter Notebook in your browser. You might see some hidden content in this version, do not pay attention to those cells (the hidden cells are marked as "cell to hide"). At the end of the page, you need to return manually to the book to see the menu and switch pages.
+- Follow each page as you would normally do with any course, and note the time you need to finish each page you work with.
+- When you finish your testing, fill the [feedback form](
+https://quaxp.limequery.com/655925?lang=en) and give your times for each page at the end.
+
+Link to the feedback form: 
+https://quaxp.limequery.com/655925?lang=en
 
 We would like to thank very much all the testers who will put in time. Testing is very important for the course and for us to give the best possible pedagogical offer. Do not hesitate to be critic.
 
