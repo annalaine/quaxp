@@ -71,11 +71,13 @@ This chapter studies how to understand, gauge and deal with data quality for num
 
 #### Chapter 2: image data
 
+__not yet accessible__
+
 We dig into the world of images. How images are treated and understood by algorithms in a machine learning experiment, and how we can modify an image dataset to modify the results of our prediction. We chose a simple problem of object classification for this chapter: we want to build a model that can classify the object present on an image (for example: "is this animal a horse or a cat?").
 
 #### Chapter 3: text data
 
-__TODO when the chapter is implemented.__
+__not yet accessible__
 
 ## Beginner level
 
@@ -88,6 +90,8 @@ Some logic thinking is still needed to understand the beginner level, as we disc
 The beginner level targets every curious mind who would come accross this teaching offer and would like to learn more about machine learning and data. Curiosity is necessary, as it is not an easy topic, but we aim to make it as accessible as it can be.
 
 ### Summary videos
+
+__not yet accessible__
 
 Summary videos at the beginning of each section aim to give a first glance of the addressed topics in the part. After watching those videos, you should be ready to start with the course itself.
 
@@ -129,7 +133,7 @@ At the end of each page, quizzes about the content of the page are proposed. Tho
 
 At the end of each chapter, a practical task is proposed. There, you can apply on new data and examples the coding concepts you learned during the course.
 
-Automatic grading is used to grade the practical task. __TODO: explain how it works once it works.__
+You can download the data we propose and solve the tasks we mention. In the future, we wish to implement automatic grading for the practical task, but as of today it is up to the learner to verify his/her ability to solve it.
 
 ## Use the book for teaching
 
