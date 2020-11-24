@@ -23,19 +23,20 @@ html:
   use_issues_button         : true  # Whether to add an "open an issue" button
   extra_navbar              : | 
     <div>
-    <p><a href="https://www.tuhh.de/alt/tuhh/about-us/imprint.html" target="_blank" style="font-weight:bold;color:#5a5a5a">Imprint of TUHH</a></p> 
+    <p><a href="./imprint.html" style="font-weight:bold;color:#5a5a5a">Imprint of TUHH</a></p> 
     <p>Funded by</p> 
     <a href="https://www.hoou.de/" target="_blank"><img src="_images/hoou_logo.png" width="150px"></a> 
     </div>
     <div style="margin-top:50px">
     <p>Powered by <a href="https://jupyterbook.org" target="_blank">Jupyter Book</a> </p>
-    </div> # Will be displayed underneath the left navbar.
+    </div>
 
   extra_footer              : |
     <div> 
-    <p><a href="https://www.tuhh.de/alt/tuhh/about-us/imprint.html" target="_blank" style="font-weight:bold;color:#333333">Imprint of TUHH</a></p> 
+    <p><a href="./imprint.html" style="font-weight:bold;color:#333333">Imprint of TUHH</a></p> 
     <p>Funded by <a href="https://www.hoou.de/" target="_blank"><img src="_images/hoou_logo.png" width="150px" style="margin-left:10px"></a> 
-    </div> # Will be displayed underneath the footer.
+    </div>
+
   home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
   baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
 
