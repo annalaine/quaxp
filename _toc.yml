@@ -55,6 +55,13 @@
       sections:
       - file: 2-3-1-gauge
       - file: 2-3-2-augmentation
+      
+- file: 3-text
+  expand_sections: true
+  sections:
+  - file: 3-1-sentiment-analysis
+  - file: 3-2-simple-transf
+  - file: 3-3-other-transf
 
 - file: A-appendix
   expand_sections: true
