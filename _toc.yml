@@ -62,6 +62,7 @@
   - file: 3-1-sentiment-analysis
   - file: 3-2-simple-transf
   - file: 3-3-other-transf
+  - file: 3-4-conclusion
 
 - file: A-appendix
   expand_sections: true
