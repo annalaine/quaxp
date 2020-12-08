@@ -24,6 +24,7 @@ html:
   extra_navbar              : | 
     <div>
     <p><a href="./imprint.html" style="font-weight:bold;color:#5a5a5a">Imprint</a></p> 
+    <p><a href="./dataprivacy.html" style="font-weight:bold;color:#5a5a5a">Data Privacy</a></p> 
     <p>Funded by</p> 
     <a href="https://www.hoou.de/" target="_blank"><img src="_images/hoou_logo.png" width="150px"></a> 
     </div>
@@ -33,8 +34,7 @@ html:
 
   extra_footer              : |
     <div> 
-    <p><a href="./imprint.html" style="font-weight:bold;color:#333333">Imprint</a></p> 
-    <p>Funded by <a href="https://www.hoou.de/" target="_blank"><img src="_images/hoou_logo.png" width="150px" style="margin-left:10px"></a> 
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This work   is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" /></a></p>
     </div>
 
   home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
