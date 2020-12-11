@@ -3,7 +3,7 @@ matplotlib
 numpy
 pandas
 sklearn
-skimage
+scikit-image
 ipywidgets
 scipy
 nltk
