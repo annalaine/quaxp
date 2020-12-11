@@ -3,3 +3,8 @@ matplotlib
 numpy
 pandas
 sklearn
+skimage
+ipywidgets
+scipy
+nltk
+reverse_geocoder
