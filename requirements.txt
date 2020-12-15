@@ -8,3 +8,4 @@ ipywidgets
 scipy
 nltk
 reverse_geocoder
+sphinxcontrib-bibtex<2.0.0
