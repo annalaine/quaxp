@@ -27,8 +27,8 @@ DE 245 980 291
 
 ## Inhaltlich verantwortlich
 
-Prof. Dr. Sybille Schupp  
-Institut für Softwaresysteme  
+Prof. Dr. Sibylle Schupp  
+Leiterin des Instituts für Softwaresysteme  
 Technische Universität Hamburg  
 Schwarzenbergstraße 95 (E)  
 D-21073 Hamburg
