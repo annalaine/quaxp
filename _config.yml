@@ -22,14 +22,10 @@ html:
   use_repository_button     : true  # Whether to add a link to your repository button
   use_issues_button         : true  # Whether to add an "open an issue" button
   extra_navbar              : | 
-    <div>
-    <p><a href="./imprint.html" style="font-weight:bold;color:#5a5a5a">Imprint</a></p> 
-    <p><a href="./dataprivacy.html" style="font-weight:bold;color:#5a5a5a">Data Privacy</a></p> 
+    <div style="text-align:left;">
     <p>Funded by</p> 
     <a href="https://www.hoou.de/" target="_blank"><img src="_images/hoou_logo.png" width="150px"></a> 
-    </div>
-    <div style="margin-top:50px">
-    <p>Powered by <a href="https://jupyterbook.org" target="_blank">Jupyter Book</a> </p>
+    <p style="margin-top:50px">Powered by <a href="https://jupyterbook.org" target="_blank">Jupyter Book</a> </p>
     </div>
 
   extra_footer              : |
