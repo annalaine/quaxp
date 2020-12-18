@@ -117,3 +117,5 @@ At the end of each page, quizzes about the content of the page are proposed. Tho
 At the end of each chapter, a practical task is proposed. There, you can apply on new data and examples the coding concepts you learned during the course.
 
 You can download the data we propose and solve the tasks we mention. In the future, we wish to implement automatic grading for the practical task, but as of today it is up to the learner to verify his/her ability to solve it.
+
+<img src="hoou_logo.png" width="0" height="0" 
