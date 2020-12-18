@@ -42,5 +42,5 @@ Email sts-office(at)tuhh.de
 ## Lizenz
 
 Sofern nicht anders angegeben, stehen die Inhalte dieses Webangebots
-unter der Lizenz [creative commons CC BY
+unter der Lizenz [Creative Commons CC BY
 4.0](https://creativecommons.org/licenses/by/4.0/deed.de).
