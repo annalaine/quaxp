@@ -118,4 +118,4 @@ At the end of each chapter, a practical task is proposed. There, you can apply o
 
 You can download the data we propose and solve the tasks we mention. In the future, we wish to implement automatic grading for the practical task, but as of today it is up to the learner to verify his/her ability to solve it.
 
-<img src="hoou_logo.png" width="0" height="0" 
+<img src="hoou_logo.png" width="0" height="0">
